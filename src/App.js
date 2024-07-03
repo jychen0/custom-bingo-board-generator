@@ -24,7 +24,9 @@ function App() {
 
   const generateRandomBoard = (words) => {
     let shuffledWords = [...words].sort(() => Math.random() - 0.5);
-    return Array(5).fill().map(() => shuffledWords.splice(0, 5));
+    const board = Array(5).fill().map(() => shuffledWords.splice(0, 5));
+    board[2][2] = "Free Space";
+    return board;
   };
 
   const resetBoard = () => {
