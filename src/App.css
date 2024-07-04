@@ -1,4 +1,4 @@
-/* General styling */
+
 .App {
   text-align: center;
   margin-top: 20px;
@@ -6,32 +6,32 @@
 
 .main-container {
   display: flex;
-  flex-direction: column; /* Column layout */
+  flex-direction: column; 
   align-items: center;
-  gap: 20px; /* Space between elements */
-  padding: 0 10px; /* Add padding for smaller screens */
+  gap: 20px; 
+  padding: 0 10px; 
 }
 
 .board-container {
   display: flex;
   justify-content: center;
-  gap: 75px; /* Space between board and input box */
-  position: relative; /* For tooltip positioning */
-  max-width: 100%; /* Ensure container doesn't exceed screen width */
+  gap: 75px; 
+  position: relative; 
+  max-width: 100%; 
 }
 
 .board {
-  display: grid; /* Use CSS grid to layout the cells */
-  grid-template-columns: repeat(5, 100px); /* Create a 5x5 grid */
-  grid-template-rows: repeat(5, 100px); /* Ensure rows are the same size */
+  display: grid; 
+  grid-template-columns: repeat(5, 100px); 
+  grid-template-rows: repeat(5, 100px); 
   border: 2px solid #333;
   border-radius: 8px;
   padding: 10px;
-  width: 520px; /* Fixed width for the board */
-  height: 520px; /* Fixed height for the board */
-  overflow: hidden; /* Ensures the board doesn't overflow its container */
-  box-sizing: border-box; /* Include padding and border in the board size */
-  max-width: 100%; /* Ensure container doesn't exceed screen width */
+  width: 520px; 
+  height: 520px; 
+  overflow: hidden;
+  box-sizing: border-box; 
+  max-width: 100%; 
 }
 
 .cell {
@@ -45,26 +45,26 @@
   overflow: hidden;
   text-align: center;
   padding: 5px;
-  width: 100; /* Fixed width for each cell */
-  height: 100px; /* Fixed height for each cell */
-  position: relative; /* Ensure positioning for absolute tooltip */
-  box-sizing: border-box; /* Include padding and border in cell size */
+  width: 100; 
+  height: 100px; 
+  position: relative; 
+  box-sizing: border-box; 
 }
 
 .cell.marked {
-  background-color: rgba(255, 255, 0, 0.5); /* Highlight marked cells */
+  background-color: rgba(255, 255, 0, 0.5); 
 }
 
 .tooltip-container {
   display: inline-block;
   position: absolute;
   top: 0;
-  width: 200px; /* Fixed width for the tooltip container */
+  width: 200px; 
   visibility: hidden;
 }
 
 .tooltip-container.visible {
-  visibility: visible; /* Show tooltip container when visible */
+  visibility: visible; 
 }
 
 .tooltip {
@@ -73,30 +73,30 @@
   color: white;
   padding: 5px;
   border-radius: 4px;
-  max-width: 180px; /* Limit the width of the tooltip */
-  word-wrap: break-word; /* Wrap text if it overflows */
-  white-space: normal; /* Ensure text wraps properly */
-  z-index: 100; /* Ensure tooltip appears above everything */
+  max-width: 180px; 
+  word-wrap: break-word; 
+  white-space: normal; 
+  z-index: 100; 
   text-align: center;
 }
 .input-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 520px; /* Fixed width */
-  max-width: 500px; /* Limit maximum width */
-  margin: 0 auto; /* Center align on smaller screens */
+  width: 520px; 
+  max-width: 500px; 
+  margin: 0 auto; 
 }
 
 textarea {
-  width: 100%; /* Full width of the container */
-  height: 80%; /* Adjust height to fit within the container */
-  margin-bottom: 10px; /* Space below textarea */
+  width: 100%; 
+  height: 80%; 
+  margin-bottom: 10px; 
   padding: 10px;
   font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
-  resize: none; /* Disable resizing */
+  resize: none; 
 }
 
 .submit-button {
